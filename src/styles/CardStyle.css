@@ -1,0 +1,14 @@
+.cardHeader {
+  font-weight: 700;
+}
+
+.grid_item {
+  display: inline;
+
+  text-align: center;
+}
+
+.button {
+  justify-content: center;
+  background-color: aqua;
+}
