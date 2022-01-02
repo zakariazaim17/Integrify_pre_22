@@ -1,19 +1,16 @@
-import { red } from "@mui/material/colors";
 import { makeStyles } from "@mui/styles";
 
 const cardstyles = makeStyles({
   cardHeader: {
     fontWeight: "bold",
-    fontSize: "10em",
-
     textAlign: "center",
   },
   cardButton: {
+    cursor: "pointer",
     justifyContent: "center",
     background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
   },
   buttonText: {
-    fontSize: "10em",
     color: "#2f3c56",
   },
   card: {

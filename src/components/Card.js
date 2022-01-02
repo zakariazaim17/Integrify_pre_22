@@ -4,14 +4,17 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
+import Box from "@mui/material/Box";
 import cardstyles from "../styles/Cardistyle";
+import { useNavigate } from "react-router-dom";
 
 import { fontSize, fontWeight, height } from "@mui/system";
 
 export default function Cardi({ onclick, data }) {
   const classes = cardstyles();
-  console.log("cardii", data);
+
+  const history = useNavigate();
+
   return (
     <Card className={classes.card}>
       <CardContent className={classes.cardContent}>
@@ -24,12 +27,11 @@ export default function Cardi({ onclick, data }) {
         <Typography sx={{ marginTop: "10px" }}>{data.brewery_type}</Typography>
         <Typography sx={{ marginTop: "10px" }}>{data.city}</Typography>
       </CardContent>
-      <CardActions className={classes.cardButton}>
-        <Button
-          size="small"
-          onClick={() => console.log("www")}
-          className={classes.buttonText}
-        >
+      <CardActions
+        className={classes.cardButton}
+        onClick={() => history(`/Detail/${data.id}`)}
+      >
+        <Button size="small" className={classes.buttonText}>
           View Detail
         </Button>
       </CardActions>

@@ -1,9 +1,37 @@
 .parent_div {
   display: grid;
+  margin: 3rem 6rem;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 
 .grandDiv {
-  margin: 20px 10px 20px 10px;
+  margin: 0.5rem;
+}
+
+.searchBarContainer {
+  background-color: bisque;
+  margin: 2rem 6rem;
+}
+
+.horizontalTextInputGroup {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputField {
+  flex: 5;
+}
+
+.filterText {
+  width: 90px;
+  align-self: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+
+filterButton {
+  background-color: blueviolet;
 }
