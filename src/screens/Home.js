@@ -43,9 +43,14 @@ export default function Home() {
 
   useEffect(() => {
     const fetchBreweries = async () => {
-      const response = await axios.get(`${baseUrl}`);
+      try {
+        const response = await axios.get(`${baseUrl}`);
 
-      setBreweriesData(response.data);
+        setBreweriesData(response.data);
+      } catch (e) {
+        setAlert(true);
+        setError(e);
+      }
     };
 
     fetchBreweries();
