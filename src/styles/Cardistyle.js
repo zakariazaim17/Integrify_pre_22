@@ -23,6 +23,9 @@ const cardstyles = makeStyles({
   typography: {
     marginTop: "20px",
   },
+  detailedCardContent: {
+    textAlign: "center",
+  },
 });
 
 export default cardstyles;

@@ -12,6 +12,7 @@
 .searchBarContainer {
   background-color: bisque;
   margin: 2rem 6rem;
+  border: 0.5px solid black;
 }
 
 .horizontalTextInputGroup {
@@ -29,9 +30,5 @@
   width: 90px;
   align-self: center;
   justify-content: center;
-  background-color: aquamarine;
-}
-
-filterButton {
-  background-color: blueviolet;
+  background-color: bisque;
 }
